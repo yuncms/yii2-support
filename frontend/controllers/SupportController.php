@@ -60,6 +60,8 @@ class SupportController extends Controller
             $source = \yuncms\question\models\Answer::findOne($model_id);
         } else if ($model == 'live') {
             $source = \yuncms\live\models\Stream::findOne($model_id);
+        } else if ($model == 'article' && Yii::$app->hasModule('article')) {
+            $source = \yuncms\article\models\Article::findOne($model_id);
         }
         //etc..
 
@@ -78,7 +80,7 @@ class SupportController extends Controller
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
         $model = Yii::$app->request->post('model');
-        $model_id = Yii::$app->request->post('sourceId');
+        $model_id = Yii::$app->request->post('model_id');
         /** @var null|\yii\db\ActiveRecord $source */
         $source = null;
         if ($model == 'user') {
