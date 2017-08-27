@@ -1,6 +1,6 @@
 # yii2-support
 
-适用于Yii2的金币模块
+适用于Yii2的赞、推荐 模块
 
 [![Latest Stable Version](https://poser.pugx.org/yuncms/yii2-support/v/stable.png)](https://packagist.org/packages/yuncms/yii2-support)
 [![Total Downloads](https://poser.pugx.org/yuncms/yii2-support/downloads.png)](https://packagist.org/packages/yuncms/yii2-support)
