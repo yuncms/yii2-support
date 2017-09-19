@@ -18,7 +18,8 @@
   },
   "autoload": {
     "psr-4": {
-      "yuncms\\support\\": ""
+      "yuncms\\support\\": "src",
+      "yuncms\\migrations\\": "migrations"
     }
   },
   "extra": {
