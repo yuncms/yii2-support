@@ -2,7 +2,9 @@
   "name": "yuncms/yii2-support",
   "description": "attention",
   "keywords": [
-    "support","yii2","yii2-module"
+    "support",
+    "yii2",
+    "yii2-module"
   ],
   "type": "yii2-extension",
   "license": "MIT",
@@ -22,6 +24,19 @@
     }
   },
   "extra": {
+    "yuncms": {
+      "name": "support",
+      "i18n": {
+        "class": "yii\\i18n\\PhpMessageSource",
+        "basePath": "@yuncms/support/message"
+      },
+      "migrationNamespace": "@yuncms/support/migrations",
+      "backend": {
+      },
+      "frontend": {
+        "class": "yuncms\\support\\frontend\\Module"
+      }
+    },
     "branch-alias": {
       "dev-master": "1.0-dev"
     }
