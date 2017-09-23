@@ -28,9 +28,9 @@
       "name": "support",
       "i18n": {
         "class": "yii\\i18n\\PhpMessageSource",
-        "basePath": "yuncms/support/message"
+        "basePath": "@yuncms/support/message"
       },
-      "migrationNamespace": "@yuncms/support/migrations",
+      "migrationNamespace": "yuncms/support/migrations",
       "backend": {
       },
       "frontend": {
