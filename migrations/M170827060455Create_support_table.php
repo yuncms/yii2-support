@@ -25,7 +25,7 @@ class M170827060455Create_support_table extends Migration
          */
         $this->createTable('{{%support}}', [
             'id' => $this->primaryKey(),
-            'user_id' => $this->integer()->notNull(),
+            'user_id' => $this->integer()->unsigned()->notNull(),
             'model_id' => $this->integer()->notNull(),
             'model' => $this->string()->notNull(),
             'created_at' => $this->integer()->unsigned()->notNull(),
